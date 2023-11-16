@@ -1,5 +1,5 @@
 {
-  "name": "untitled",
+  "name": "hasker",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -20,9 +20,26 @@
   "dependencies": {
     "axios": "^1.6.2",
     "bootstrap-vue": "^2.23.1",
+    "components": "^0.1.0",
     "sass-loader": "^13.3.2",
+    "socket.io": "^4.7.2",
     "vue": "^3.3.8",
     "vue-router": "^4.2.5",
     "vuex": "^4.1.0"
-  }
+  },
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Rin-j-sun/Hasker.git"
+  },
+  "keywords": [
+    "haskerwow"
+  ],
+  "author": "Rin-j-sun",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Rin-j-sun/Hasker/issues"
+  },
+  "homepage": "https://github.com/Rin-j-sun/Hasker#readme",
+  "description": ""
 }
