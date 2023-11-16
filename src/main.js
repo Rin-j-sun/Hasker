@@ -4,7 +4,7 @@ import VueRouter from 'vue-router'
 import BootstrapVue from 'bootstrap-vue'
 
 import store from './store/store.js'
-import index from './router/index.js'
+import index from './router/blog/index.js'
 
 Vue.config.productionTip = false
 

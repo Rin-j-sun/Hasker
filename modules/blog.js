@@ -23,6 +23,28 @@ export default {
             return [];
         },
     },
+    prevArticle(state) {
+        let prevItem = null;
+        if (state.activeArticle) {
+            state.articles.forEach((item, index) => {
+                if (item.id == state.activeArticle.id) {
+                    prevItem = state.articles[index-1] || null;
+                }
+            });
+        }
+        return prevItem;
+    },
+    nextArticle(state) {
+        let nextItem = null;
+        if (state.activeArticle) {
+            state.articles.forEach((item, index) => {
+                if (item.id == state.activeArticle.id) {
+                    nextItem = state.articles[index+1] || null;
+                }
+            });
+        }
+        return nextItem;
+    },
     mutations: {},
     actions: {
         async loadArticles({ commit, state }) {},

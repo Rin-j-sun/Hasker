@@ -1,10 +1,14 @@
 <template>
-    <ListItems :items="items">
+    <ListItems :items="items" class="row">
         <template v-slot:default="props">
-            <ArticleItem :item="props.item"></ArticleItem>
+            <b-col :cols="itemCols">
+                <ArticleItem :item="props.item"></ArticleItem>
+            </b-col>
         </template>
         <template v-slot:empty>
-            Статьи еще пишутся :)
+            <b-col>
+                Статьи еще пишутся :)
+            </b-col>
         </template>
     </ListItems>
 </template>
@@ -20,5 +24,16 @@ export default {
         ListItems,
     },
     extends: ListItems,
+    props: {
+        cols: {
+            type: Number,
+            default: 1,
+        },
+    },
+    computed: {
+        itemCols() {
+            return 12 / this.cols;
+        },
+    },
 }
 </script>

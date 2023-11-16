@@ -4,7 +4,7 @@
             <h1>
                 {{ category.title }}
             </h1>
-            <ArticleItems :items="articles"></ArticleItems>
+            <ArticleItems :items="articles" :cols="2"></ArticleItems>
         </div>
         <div v-else>
             Категория не найдена
