@@ -9,11 +9,17 @@
     "preview": "vite preview"
   },
   "devDependencies": {
+    "node-sass": "^9.0.0",
     "typescript": "^5.0.2",
     "vite": "^4.4.5",
     "webpack": "^5.89.0"
   },
   "dependencies": {
-    "vue": "^3.3.8"
+    "axios": "^1.6.2",
+    "bootstrap-vue": "^2.23.1",
+    "sass-loader": "^13.3.2",
+    "vue": "^3.3.8",
+    "vue-router": "^4.2.5",
+    "vuex": "^4.1.0"
   }
 }
