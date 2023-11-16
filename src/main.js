@@ -4,7 +4,7 @@ import VueRouter from 'vue-router'
 import BootstrapVue from 'bootstrap-vue'
 
 import store from './store/store.js'
-import router from './router/router.js'
+import index from './router/index.js'
 
 Vue.config.productionTip = false
 
@@ -13,6 +13,6 @@ Vue.use(BootstrapVue)
 
 new Vue({
     store,
-    router,
+    router: index,
     render: h => h(App),
 })

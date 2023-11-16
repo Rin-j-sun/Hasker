@@ -1,3 +1,4 @@
+// Класс для статьи, выглядит так:
 
 export default class Article
 {
